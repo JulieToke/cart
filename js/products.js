@@ -1,5 +1,5 @@
 // DUMMY PRODUCTS (PRODUCT ID : DATA)
-var products = {
+const products = {
   123: {
     name : "Rude Gnome",
     desc : "Keep the vistors at bay with this rude little fellow!",
