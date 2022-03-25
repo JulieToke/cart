@@ -1,0 +1,110 @@
+/* (A) ENTIRE PAGE */
+#cart-wrap * {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(/images/shamrock-wallpaper.jpg);
+}
+#cart-wrap {  
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#cart-products, #cart-items { padding: 10px; }
+#cart-products { 
+  flex-grow: 1;
+ } 
+ .c-total{
+  padding: 10px;
+  border: 0;
+  background: #51b361;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+
+ }
+input.cart, button.cart{
+  padding: 10px;
+  border: 0;
+  background: #51b361;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+#template-cart-checkout{
+  display: inline;  
+  width: 100%;
+}
+/* (B) PRODUCTS LIST */
+#cart-products {  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 10px;
+}
+.p-item {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+.p-img { max-width: 150px; }
+.p-name, .p-price { font-weight: 700; }
+.p-name, .p-desc, .p-price { margin: 5px 0; }
+.p-name {
+  font-size: 1.35em;
+  text-transform: uppercase;
+}
+.p-desc {
+  color: #7c7979;
+  font-size: 0.9em;
+}
+.p-price { color: #64da64; }
+.p-add { width: 50%; }
+
+/* (C) CURRENT SHOPPING CART */
+#cart-items {
+  background: #96e7a1;
+  color: #fff;  
+  width: 100%;
+}
+.c-item {
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#cart-background{
+  margin: 0 auto;
+  background: #96e7a1;
+  color: #fff;
+  border-radius: 5px;
+  display: grid;
+  width: 65%;
+}
+.c-name{
+  font-size: 1.05em;
+  font-weight: 700;
+}
+#p-qty{
+  width: 10%;
+}
+.c-total, button.c-empty, button.c-checkout { width: 15%; }
+button.c-total, button.c-empty, button.c-checkout { margin-top: 10px; }
+.c-name{ width: 22%}
+.c-del { width: 10%; }
+.c-qty { width: 30%; }
+.c-empty, .c-checkout, .c-total { width: 15%; }
+.header{
+  background-color: #fff;
+  display: flex;  
+}
+h2{
+  text-align: center;
+}
+/* (D) RESPONSIVE */
+@media screen and (max-width: 640px) {
+  #cart-products {
+    grid-template-columns: 100%;
+  }
+}
