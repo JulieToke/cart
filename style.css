@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(/images/shamrock-wallpaper.jpg);
+  background-image: url(shamrock-wallpaper.jpg);
 }
 #cart-wrap {  
   display: flex;
